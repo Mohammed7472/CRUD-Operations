@@ -1,0 +1,104 @@
+:root {
+  --main-color: #009688;
+  --alt-color: #09b4a5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui;
+  background-color: #222;
+  color: #fff;
+}
+.container {
+  width: 800px;
+  margin: auto;
+}
+.container header {
+  text-align: center;
+  margin: 20px 0;
+}
+.container header p {
+  font-size: 20px;
+  margin-top: 5px;
+  font-style: italic;
+}
+.container input {
+  width: 100%;
+  border: none;
+  background-color: #111;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.container input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+.container .inputs .price {
+  display: flex;
+  gap: 8px;
+}
+.container .inputs .total {
+  background-color: red;
+  border-radius: 4px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-style: italic;
+}
+.container .inputs .total::before {
+  content: "Total: ";
+}
+.container .btn {
+  display: block;
+  width: 100%;
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.container .btn:hover {
+  background-color: var(--alt-color);
+}
+.container .search-methods {
+  display: flex;
+  gap: 30px;
+}
+.results table {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+table th {
+  text-transform: uppercase;
+}
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+table th,
+table td {
+  padding: 7px;
+}
+.results table .btn {
+  width: 60px;
+  height: 25px;
+  margin: auto;
+  padding: 2px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+}
+.results table .btn:hover {
+  transform: scale(1.1);
+}
